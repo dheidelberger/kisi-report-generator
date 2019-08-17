@@ -1,0 +1,15 @@
+{
+    "extends": [
+        "plugin:vue/essential",
+        "@vue/airbnb"
+    ],
+
+    "rules": {
+        "no-underscore-dangle": ["off"],
+        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+        "prefer-destructuring": ["error", {"object": false, "array": false}],
+        "no-unused-vars": ["error", { "args": "none" }],
+        "no-continue": ["off"],
+        "no-console": ["error", { "allow": ["warn", "error"] }]
+    }
+}

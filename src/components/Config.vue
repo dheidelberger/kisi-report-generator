@@ -38,6 +38,16 @@
                             Only include each employee's first entry of the day
                         </label>
                 </div>
+                <div class="custom-control custom-checkbox">
+                    <input v-model="emptyReports"
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="empty-reports">
+                    <label class="custom-control-label"
+                        for="empty-reports">
+                            Include empty reports for days when nobody keys in
+                        </label>
+                </div>
             </div>
 
         </section>
@@ -67,6 +77,7 @@ export default {
   components: {
     mdbBtn,
   },
+
   data() {
     return {
       dateFormat: 'D MMM, YYYY',
@@ -74,8 +85,10 @@ export default {
       dateTwo: '',
       firstEntry: true,
       weekends: true,
+      emptyReports: true,
     };
   },
+
   methods: {
     formatDates(dateOne, dateTwo) {
       if (!dateOne && !dateTwo) {
@@ -103,9 +116,11 @@ export default {
         date2: this.dateTwo,
         firstEntry: this.firstEntry,
         weekends: this.weekends,
+        emptyReports: this.emptyReports,
       });
     },
   },
+
   mounted() {
     if (localStorage.firstEntry) {
       this.firstEntry = JSON.parse(localStorage.firstEntry);
@@ -114,13 +129,21 @@ export default {
     if (localStorage.weekends) {
       this.weekends = JSON.parse(localStorage.weekends);
     }
+
+    if (localStorage.emptyReports) {
+      this.emptyReports = JSON.parse(localStorage.emptyReports);
+    }
   },
+
   watch: {
     firstEntry(newFirstEntry) {
       localStorage.firstEntry = newFirstEntry;
     },
     weekends(newWeekends) {
       localStorage.weekends = newWeekends;
+    },
+    emptyReports(newEmptyReports) {
+      localStorage.emptyReports = newEmptyReports;
     },
   },
 

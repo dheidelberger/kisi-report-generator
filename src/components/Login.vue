@@ -48,7 +48,6 @@ export default {
           this.$emit('loadingEnds');
           this.$emit('loadingBegins', 'Getting employee list');
           this.getEmployeeList(0);
-          // this.$emit('loggedIn', this.kisiClient);
         }).catch((err) => {
           // console.log('Login failed');
           this.$emit('loadingEnds');

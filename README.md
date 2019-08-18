@@ -30,15 +30,15 @@ npm run build
 
 ## To-Do
 
-The code isn't particularly well commented, I need to do more of that. I also haven't put too much thought into dealing with timezones. For now, I'm assuming that the report is being generated in the same timezone as the door that's being unlocked. I realize that won't be the case for some organizations. I'm also not entirely sure how Kisi deals with multiple timezones in its event logs. If this is a feature you're interested in and you have an event log with multiple timezones in it, I'd be interested in seeing it to explore adding this feature.
+The code isn't particularly well commented, I need to do more of that. I also haven't put too much thought into dealing with timezones. For now, I'm assuming that the report is being generated in the same timezone as the door that's being unlocked. I realize that won't be the case for some organizations. I'm also not entirely sure how Kisi deals with multiple timezones in its event logs. If this is a feature you're interested in and you have an event log with multiple timezones in it, I'd be interested in seeing it to explore the feasibility of adding this.
 
 ## Contributing
 
-Feel free to submit a pull request to improve the code. I'm relatively new with Vue, so I'm sure I'm doing a lot wrong, I'd love to be corrected!
+Feel free to submit a pull request to improve the code. I'm relatively new with Vue, so I'm sure I'm doing a lot wrong. I'd love to be corrected!
 
 ## Credits
 
-This project is written and maintained by David Heidelberger. I'm a full-time video editor and producer and part-time software developer. I use this tool and many other proprietary ones every day at my day job on a documentary series on PBS. I'm available for workflow consultation and custom software solutions for your post-production workflow. To get in touch about a consult, or just to tell me how you're using the app, I'd love to [hear from you](mailto:david.heidelberger@gmail.com).
+This project is written and maintained by [David Heidelberger](http://www.davidheidelberger.com). I'm a full-time video editor and producer and part-time software developer. I use this tool and many other proprietary ones every day at my day job on a documentary series on PBS. I'm available for workflow consultation and custom software solutions for your post-production workflow. To get in touch about a consult, or just to tell me how you're using the app, I'd love to [hear from you](mailto:david.heidelberger@gmail.com).
 
 The icon was based on an icon at [icons8.com](https://www.icons8.com/).
 

@@ -71,12 +71,14 @@ export default {
       this.dropError = false;
       // console.log('File was added.');
       // console.log(file);
-      if (file.type !== 'text/csv') {
+      if (file.name.slice(-4) !== '.csv') {
         // console.log('Not a CSV');
         this.$refs.myVueDropzone.removeAllFiles();
         this.errMsg = 'This does not appear to be a .csv file.';
         this.dropError = true;
+        // console.log(file);
       } else {
+        // console.log(file);
         this.dropError = false;
         this.$emit('loadingBegins', 'Reading events...');
         const tempUnlocks = [];

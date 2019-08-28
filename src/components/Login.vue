@@ -77,7 +77,7 @@ export default {
           }));
           // console.log(users);
           this.tempUsers = this.tempUsers.concat(users);
-          // console.log("Count: "+(list.pagination.count+list.pagination.offset));
+          // console.log(`Count: ${list.pagination.count + list.pagination.offset}`);
 
           if (list.data.length + list.pagination.offset < list.pagination.count) {
             this.getEmployeeList(list.data.length + list.pagination.offset);

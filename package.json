@@ -14,7 +14,7 @@
     "jspdf": "^1.5.3",
     "kisi-client": "^5.0.3",
     "mdbvue": "^5.7.0",
-    "papaparse": "^5.0.1",
+    "papaparse": "^5.2.0",
     "vue": "^2.6.10",
     "vue-airbnb-style-datepicker": "^2.7.1",
     "vue-loading-overlay": "^3.2.0",

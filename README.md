@@ -4,6 +4,8 @@ This web app generates day-by-day attendance reports based on the output of a Ki
 
 This app is live at [kisireportgenerator.com](https://www.kisireportgenerator.com). If all you want to do is use the tool, you should go there. If you want to fork or develop it, you've come to the right place!
 
+Kisi Report Generator requires a Kisi login. You can watch a demo of the app in action [https://www.youtube.com/watch?v=1D6xUD5ngRI](here).
+
 ## Getting Started
 
 This project requires [NodeJS](https://www.nodejs.org/) and NPM. It is built with the [Vue.js](https://www.vuejs.org/) web framework.
